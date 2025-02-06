@@ -1,0 +1,573 @@
+body{
+background-color: #2d0c39;
+}
+.head{
+  background-color:#24102A;
+}
+.header-logo {
+  margin-top: -20px;
+  margin-left: -10px;
+  display: flex; /* Ensures the content can be aligned */
+  align-items: center; /* Vertically centers the content if needed */
+  justify-content: flex-start; /* Aligns the logo to the left */
+}
+/*Logo for Header */
+.header-logo1 img {
+  margin-left: -90px;
+  width: 130px; /* Adjust this to make the logo smaller */
+  height: auto; /* Maintain the aspect ratio */
+}
+  
+
+/* Aside */
+aside{
+background-color:#24102A;
+}
+.bg-custom-home {
+  background-image: linear-gradient(to bottom, #5f345f, #461954, #1B234A);
+}
+.list-group-overlay {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.list-group-item {
+  background-color: #24102A;
+}
+.back{
+  background-color:#24102A;
+}
+/*End of  Aside */
+  
+/* Nurshuak photo */
+.image-container {
+  position: relative;
+  height: auto; /* Let the container match the image's height */
+  display: inline-block;
+  }
+  .container-aboutus {
+    position: relative;
+  }
+
+  /* The Text over Photo of Home page; */
+  .overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:  rgb(244, 239, 239);
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background for text */
+  padding: 50px;
+  border-radius: 5px;
+  }
+  .imagesize{
+    height: 550px;
+  }
+  /*End of Nurshuak photo */
+    
+    
+  
+/* The Text over Gradient of Aboutpage */
+  .textwhat{
+    text-align: center;
+    color: white;
+  }
+  .overlay-textabout {
+    position: absolute;
+    text-align: center;
+    top: 33%;
+    left: 20%;
+    right: 25%;
+    transform: translate(-20%, -20%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for text */
+    padding: 5px;
+    border-radius: 5px;
+    }
+    .gradient{
+      width: 1500px;
+      height: 506px;
+      background-color: rgb(27, 6, 6); /* For browsers that do not support gradients */
+      background-image: linear-gradient(rgb(4, 10, 59), rgb(58, 21, 89));
+    }
+  
+    .overlay-imageabout{
+      position: absolute;
+      top: 17%;
+    left: 65%;
+    height: auto; /* Ensure it scales properly */
+  }
+  .move-left {
+    transform: translateX(15px); /* Adjust the value to control the shift */
+  }
+ 
+   
+  
+  
+ 
+ 
+
+ 
+   
+
+   
+
+
+
+
+
+  
+  @media (max-width: 768px) {
+     .overlay-text {
+     font-size: 14px;
+     padding: 10px;
+     }
+  }
+  .button_class {
+    position: absolute;
+    bottom:60px; /*Adjust this value to move the button up */
+    left: 80%;
+    width: 230px; 
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for text */
+    border: solid 2px white;
+  transform: translateX(-50%);
+       
+}
+.banner {
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 32vw;
+    justify-content: center;
+    margin-top: -25px;
+}
+   
+.text-banner {
+    flex-direction: column;
+    margin-left:50px;
+    margin-right:50px;
+    background: #3A616E;
+    background: linear-gradient(0deg, rgb(56, 41, 66) 0%, rgb(32, 5, 32) 100%);
+    min-height: 50em;
+    height: auto;
+    padding-top: 2px;
+}
+.banner-text {
+  background-color:#24102A;
+    color: rgb(241, 235, 235);
+    padding: 1rem;
+}
+/*Section 2  in homepage*/
+.banner-text1{
+   position: relative;
+    left: -10px; /* Moves the image 10px to the left */
+  background-color:#1d2d33;
+    color:rgb(241, 235, 235);
+    padding: 1rem;
+}
+.shortimage {
+  position: relative;
+    left: 10px; /* Moves the image 10px to the right */
+  height: 400px;
+  object-fit: cover; /* Keeps the image's proportions */
+
+}
+/*Section 5  in homepage*/
+.Image-review1{
+  padding-left: 3em;
+ 
+}
+.round-image1{
+   width:100%; 
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   transform: translateX(-20px); /* Adjust value for desired left shift */
+  }
+
+/*Section 1  in aboutpage*/
+.banner-text2{
+  position: relative;
+  left: -55px; /* Moves the image 10px to the left */
+  background-color:#24102A;
+  color: #fff;
+  padding: 1rem;
+}
+.videoabout{
+  position: relative;
+  left: 35px; /* Moves the image 10px to the left */
+}
+/*Section 2  in Aboutpage*/
+.banner-text3{
+  position: relative;
+  left: 10px; /* Moves the image 10px to the right */
+  background-color:#24102A;
+  color: #fff;
+  padding: 1rem;
+}
+.shortimage1 {
+  position: relative;
+    right: 10px; /* Moves the image 10px to the right */
+  height: 400px;
+  object-fit: cover; /* Keeps the image's proportions */
+
+}
+/* End of Section 2  in Aboutpage*/
+/*Section 3  in aboutpage*/
+.Image-review{
+  padding-left: 7em;
+ 
+}
+.round-image{
+   width:100%; 
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+  
+}
+.Review-text{
+   text-align:center;
+   font-size: 24px;
+   color: whitesmoke;
+text-align: justify;
+font-family: Arbutus Slab;
+padding-top: 3em;
+padding-right:4em ;
+}
+/* End of Section 3  in aboutpage*/
+.text-services{
+  background-color:#24102A;
+    color: #FFF;font-family: Hanuman;
+    padding: 1rem;
+        font-size: 28px;
+        text-align: center;
+}
+.text{
+    color: #FFF;font-family: Hanuman;
+    padding: 1rem;
+        font-size: 28px;
+        text-align: center;  
+}
+
+
+.container-fluid1{
+  background-color: #795e79;
+  background: linear-gradient(0deg, rgb(132, 111, 147) 0%, rgb(32, 5, 32) 100%);
+  padding: 50px;
+}
+
+    
+ 
+/* Section 1 of Homepage and About Uspage (ex background color #200520 #7c5f7c)  */
+  #container1{
+   background-color: #21113D;/* Transparent background */
+    border: 1px  #24102A solid;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  #container2{
+    background-color: #21113D;/* Transparent background */
+     border: 1px  #24102A solid;
+     padding: 30px;
+     margin-bottom: 20px;
+     display: flex;
+   }
+   /* The cardboxes of Home page (countries) */
+  .h100{ 
+    height: 480px;
+    object-fit: cover; /* Keeps the image's proportions */ 
+  }
+
+    
+  /* The 1st box of Home page (video) */
+  .box1{
+    position: relative;
+    left: -35px; /* Moves the image 10px to the left */
+    border: 1px #b290b9 solid;
+    background-color: #6D4077;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+ margin-top: 100px;
+ display: flex; 
+}
+
+.h400{
+  max-height: 400px;
+}
+.videohome{
+  height: auto;
+}
+.videoabout{
+ max-width:500px;
+}
+.imagesizenews{
+  height: 300px;
+}
+  
+/* The Gradientnews of NEWS page */
+.gradientnews{
+  background: linear-gradient(0deg, rgb(56, 41, 66) 0%, rgb(32, 5, 32) 100%);
+}
+.bg-custom {
+  background-color: #00035E;
+}
+/* The News page  for the image-card */
+.card {
+height: auto;
+}
+.card-text{
+overflow:hidden;
+text-overflow:ellipsis ;
+display:-webkit-box ;
+-webkit-line-clamp: 3; /* Adjust for better text display */;
+-webkit-box-orient:vertical;
+}
+.h300{
+  height: auto; /* Allow the content to define the height */
+}
+.h200{
+ height: 200px; /* Adjust height for smaller cards */
+ object-fit: cover;/* Keeps the image's proportions */
+  }
+/* The  End of the News page  for the image-card */
+  
+
+
+
+
+   
+
+/* The  Big box  of Service page */
+.box {
+  background-color:#77709c;
+  min-height: 8em;
+  border-radius:10px;
+  margin-top: 60px; 
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+ width: 85%;
+}
+ /*!--  The Buttons of Big box of Service page*/
+.Button{
+  width: 380px; 
+  height: 50px;
+   margin: 0 auto; 
+   display: flex; 
+   align-items: center; 
+   justify-content: center;
+    background-color: #042f5d; 
+    color: white; 
+    border-radius: 176px;
+    font-size: 26px;
+}
+.Buttonapply{
+  position: relative;
+  left: -35px; /* Moves the image 35px to the left */
+  width: 150px;
+  height: 50px;
+   margin: 0 auto; 
+   display: flex; 
+   align-items: center; 
+   justify-content: center;
+    background-color: #77709c; 
+    color: white; 
+    border-radius: 176px;
+  font-size: 16px;
+}
+
+/* The Text of Legalisation  of Service page */
+.text-overlay {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Optional: Dark background for better readability */
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; /* Adjust width as needed */
+}
+
+.text-overlay h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.overlay-textcontact {
+  position: absolute;
+  text-align: center;
+  top: 33%;
+  left: 32%;
+  right: 25%;
+  transform: translate(-20%, -20%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background for text */
+  padding: 5px;
+  border-radius: 5px;
+  }
+  /* The Second Section  of Contact page */
+  .gradientcontact{
+    width: 1500px;
+    height: 680px;
+    background-color: rgb(27, 6, 6); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(4, 10, 59), rgb(58, 21, 89));
+  }
+  .custom-row {
+    display: flex;
+    justify-content: center; /* Centers the columns horizontally */
+    align-items: center; /* Centers the columns vertically */
+    gap: 20px; /* Optional: Adds space between the columns */
+  }
+  
+  .col-left{
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers content horizontally within each column */
+    align-items: center; /* Centers content vertically within each column */
+    flex-direction: column;
+    text-align: center; /* Centers text within each column */
+    max-width: 630px; /* Optional: Sets a maximum width for each column */
+  }
+  
+  .containerfootercontact {
+    text-align: justify;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+  }
+  .day{
+    color: #fff;
+  }
+  /* The End of the Second Section  of Contact page */
+
+/* The FOOTHER */
+/*Logo for Footer */
+.header-logo img {
+  width: 200px; /* Adjust this to make the logo smaller */
+  height: auto; /* Maintain the aspect ratio */
+}
+.containerfooter{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: antiquewhite;
+}
+.footerlist{
+  position: relative;
+  left: 30px; /* Moves the image 10px to the right */
+  color: antiquewhite;
+  
+/* The END ofFOOTHER */
+}
+/* The  Form1(Javascript)*/
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+
+/* The  Our Team of the Page Aboutus */
+.containerstaff {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 20px; /* Slight left and right margins */
+}
+
+
+.col-6-left {
+  background: linear-gradient(to bottom, #2d1850, #361847, #492553);
+  padding: 60px 50px; /* Reduce padding to make more space for content */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds space between elements */
+}
+
+
+
+.col-6-left .profile {
+  position: relative;
+  top: -50px; /* Adjust this value to move the profiles up */
+}
+.profile p {
+  padding-left: 3em;
+  padding-top: 0.5em; /* Fixed the value here */
+  font-size: 24px;
+  color: whitesmoke;
+  text-align: justify;
+  font-family: Arbutus Slab; 
+}
+
+.col-6-left img {
+  width:100%; 
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+   border: 3px solid white;
+  
+}
+
+.col-6-right {
+  margin-top: 30px;
+  padding: 20px;
+  margin-left: 20px;
+  flex-grow: 1;
+  position: relative; /* Keep relative for flexibility */
+  display: flex; /* Ensures child elements are displayed correctly */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  gap: 20px; /* Adds spacing between child elements */
+}
+
+.col-6-right h1 {
+  margin-top: 10px; 
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.col-6-right .profile-info {
+  margin-bottom: 20px;
+  position: relative;
+  top: -50px; 
+}
+
+.col-6-right h3 {
+  padding-top: 3em;
+padding-right:4em ;
+  color: aliceblue;
+  margin-bottom: 10px;
+  font-size:20px;
+}
+
+.col-6-right p {
+  font-size: 24px;
+  line-height: 1.5;
+  padding-left: 3em;
+  padding-top: 0.5em; /* Fixed the value here */
+  color: whitesmoke;
+  text-align: justify;
+  font-family: Arbutus Slab; 
+}
+
+/* The End Our Team of the Page Aboutus */

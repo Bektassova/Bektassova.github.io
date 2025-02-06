@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="forms.css">
+    <title>Second Form</title>
+</head>
+
+<body>
+    <form action="mailto:uiertg@gmail.com" method="post" onsubmit="return validate();" enctype="text/plain" class="contactPage">
+        <h1 style="text-align: center;">Job Seekers</h1>
+        <p style="text-align: center;">Please fill in this form</p>
+
+        <!-- Personal Details Section -->
+        <fieldset id="box1">
+            <legend id="personalDetailsLegend" style="text-align: center;">Personal Details</legend>
+
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="FirstName" placeholder="Joe">
+                <small class="error" id="firstNameError"></small>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="LastName" placeholder="Magro">
+                <small class="error" id="lastNameError"></small>
+            </div>
+            <div>
+                <label for="yourPosition">Your Position</label>
+                <input type="text" id="yourPosition" name="YourPosition" placeholder="Manager">
+                <small class="error" id="yourPositionError"></small>
+            </div>
+            <div>
+                <label for="gender">Business Structure</label><br>
+                <select name="gender" id="gender">
+                    <option value="" disabled selected>Please select a business structure</option>
+                    <option value="1">Sole proprietorship</option>
+                    <option value="2">Partnerships</option>
+                    <option value="3">Limited liability company (LLC)</option>
+                    <option value="4">Corporation - C corp</option>
+                    <option value="5">Corporation - S corp</option>
+                    <option value="6">Corporation - Benefit Corporation</option>
+                    <option value="7">Corporation - Nonprofit</option>
+                </select>
+                <small class="error" id="genderError"></small>
+            </div>
+            <div>
+                <label for="describing">Please describe what your company does?</label><br>
+                <input type="text" id="describing" name="Describing" placeholder="">
+                <small class="error" id="describingError"></small>
+            </div>
+        </fieldset>
+
+        <!-- Contact Information Section -->
+        <fieldset id="box2">
+            <legend id="contactInfoLegend">Contact Information</legend>
+            <div>
+                <label for="located">What country are you located in?</label><br>
+                <input type="text" id="located" name="LocatedCountry" placeholder="Malta">
+                <small class="error" id="locatedError"></small>
+            </div>
+            <div>
+                <label for="email">Business Email Address</label><br>
+                <input type="email" id="email" name="Email" placeholder="john@company.com">
+                <small class="error" id="emailError"></small>
+            </div>
+            <div>
+                <label for="phone">Phone Number of the Country You Are Located In</label><br>
+                <input type="text" id="phone" name="Phone" placeholder="Prefix">
+                <p>Required Field - Insert your country prefix number (e.g., prefix for Malta is 356).</p>
+                <small class="error" id="phoneError"></small>
+            </div>
+            <div>
+                <label for="link">Please add the website link or social media of your company</label><br>
+                <input type="url" id="link" name="Link" placeholder="Type URL here.....">
+                <small class="error" id="linkError"></small>
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="reset" class="cancelbtn">Cancel</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+    <script src="form2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="forms.css">
+  <title>Job Application Form</title>
+ 
+</head>
+<body>
+  <h1 style="text-align: center;">Job Seekers</h1>
+  <p style="text-align: center;">Please fill in this form</p>
+
+  <form id="jobApplicationForm" onsubmit="return validate();">
+    <!-- Personal Details Section -->
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Joe"/>
+        <span id="firstNameError" class="error"></span>
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Magro"/>
+        <span id="lastNameError" class="error"></span>
+      </div>
+
+      <!-- Age Group -->
+      <div class="form-group">
+        <label>Age Group</label>
+        <div>
+          <input type="radio" id="age1" name="age" value="18-22"/>
+          <label for="age1">18-22</label>
+        </div>
+        <div>
+          <input type="radio" id="age2" name="age" value="23-28"/>
+          <label for="age2">23-28</label>
+        </div>
+        <div>
+          <input type="radio" id="age3" name="age" value="29-35"/>
+          <label for="age3">29-35</label>
+        </div>
+        <div>
+            <input type="radio" id="age4" name="age" value="36-45"/>
+            <label for="age4">36-45</label>
+          </div>
+          <div>
+            <input type="radio" id="age5" name="age" value="45+"/>
+            <label for="age5">45+</label>
+          </div>
+        <span id="ageGroupError" class="error"></span>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="">-- Select Gender --</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <span id="genderError" class="error"></span>
+      </div>
+    </fieldset>
+
+    <!-- Nationality Section -->
+    <fieldset>
+      <legend>Nationality</legend>
+
+      <!-- Current Nationality -->
+      <div class="form-group">
+        <label for="nationality">Resident</label>
+        <input type="text" id="nationality" name="nationality" placeholder="Maltese"/>
+        <span id="nationalityError" class="error"></span>
+      </div>
+
+      <!-- Birth Nationality -->
+      <div class="form-group">
+        <label for="birthnationality">Birth Nationality</label>
+        <input type="text" id="birthnationality" name="birthnationality" placeholder="Maltese"/>
+        <span id="birthnationalityError" class="error"></span>
+      </div>
+    </fieldset>
+
+    <!-- Location Section -->
+    <fieldset>
+      <legend>Location</legend>
+
+      <!-- Country of Birth -->
+      <div class="form-group">
+        <label for="birthcountry">Country of Birth</label>
+        <input type="text" id="birthcountry" name="birthcountry"/>
+        <span id="errorBirthcountry" class="error"></span>
+      </div>
+
+      <!-- Located Country -->
+      <div class="form-group">
+        <label for="located">Currently Located Country</label>
+        <input type="text" id="located" name="located" placeholder=""/>
+        <span id="errorLocatedcountry" class="error"></span>
+      </div>
+    </fieldset>
+
+    <!-- Contact Details Section -->
+    <fieldset>
+      <legend>Contact Details</legend>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="petergraft@gmail.com"/>
+        <span id="errorEmail" class="error"></span>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone"> Phone number of country where you are located in</label>
+        <input type="text" id="phone" name="phone"  placeholder="Prefix"/>
+        <p style="font-style: italic;">Required Field - Insert your country prefix number (e.g., prefix for Malta is 356).</p>
+        <span id="phoneError" class="error"></span>
+      </div>
+
+      <!-- Local Phone -->
+      <div class="form-group">
+        <label for="loacalphone">Local Phone</label>
+        <input type="text" id="loacalphone" name="loacalphone" placeholder="Phone Number"/>
+        <span id="loacalphoneError" class="error"></span>
+      </div>
+    </fieldset>
+
+    <!-- Job Details Section -->
+    <fieldset>
+      <legend>Job Details</legend>
+
+      <!-- Job Applying For -->
+      <div class="form-group">
+        <label for="applying">Job Sector & Discipline</label>
+        <select id="applying" name="applying">
+          <option value="default">-- Please select a Sector & Discipline --</option>
+          <option value="2">Tourism</option>
+          <option value="3">Transportation</option>
+          <option value="2">Hospitality</option>
+          <option value="3">Security</option>
+          <option value="2">Health Caring</option>
+          <option value="3">IT</option>
+          <option value="2">Oil & Gas Industry</option>
+          <option value="3">Chemicals</option>
+          <option value="2">Construction</option>
+          <option value="3">Coal Industry</option>
+          <option value="2">Industrial</option>
+          <option value="3">Manufacturing</option>
+        </select>
+        <span id="applyingError" class="error"></span>
+      </div>
+
+      <!-- CV Upload -->
+      <div class="form-group">
+        <label for="cvUpload">Upload Your CV</label>
+        <input type="file" id="cvUpload" name="cvUpload"/>
+        <span id="cvUploadError" class="error"></span>
+      </div>
+    </fieldset>
+
+    <!-- Submit Button -->
+    <button type="reset" class="cancelbtn">Cancel</button>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="form.js"></script>
+</body>
+</html>
+
+ 

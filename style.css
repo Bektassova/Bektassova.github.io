@@ -109,10 +109,12 @@ background-color:#24102A;
   /* Contact page */
   .gradientcontact {
     width: 100%;
-    max-width: 1700px; /* or whatever you prefer */
-    margin: 0 auto; /* centers the div horizontally */
+    max-width: 1700px;
+    margin: 0 auto;
     padding: 20px;
+    padding-bottom: 100px; /* ✅ Ensures full content shows */
   }
+  
  
   .contact-card {
     min-height: 300px; /* Adjust if needed */

@@ -107,7 +107,12 @@ background-color:#24102A;
  
    
   
-  
+  .gradientcontact {
+    width: 100%;
+    max-width: 1700px; /* or whatever you prefer */
+    margin: 0 auto; /* centers the div horizontally */
+    padding: 20px;
+  }
  
  
 

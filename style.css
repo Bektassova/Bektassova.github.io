@@ -112,8 +112,10 @@ background-color:#24102A;
     max-width: 1700px;
     margin: 0 auto;
     padding: 20px;
-    padding-bottom: 100px; /* ✅ Ensures full content shows */
+    padding-bottom: 100px; /* Already added, good! */
+    min-height: 85vh; /* 👈 Add this line */
   }
+  
   
  
   .contact-card {

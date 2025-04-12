@@ -106,7 +106,7 @@ background-color:#24102A;
   }
  
    
-  
+  /* Contact page */
   .gradientcontact {
     width: 100%;
     max-width: 1700px; /* or whatever you prefer */
@@ -114,7 +114,10 @@ background-color:#24102A;
     padding: 20px;
   }
  
- 
+  .contact-card {
+    min-height: 300px; /* Adjust if needed */
+  }
+  /*  Enf of Contact page */
 
  
    
